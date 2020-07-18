@@ -2,17 +2,17 @@
 lock '3.6.0'
 
 # デプロイするアプリケーション名
-set :application, 'blogapp_aws_5'
+set :application, 'blogapp'
 
 # cloneするgitのレポジトリ
 # （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
-set :repo_url, 'https://github.com/railsrkomo/vagrant_aws_blogapp5'
+set :repo_url, 'https://github.com/railsrkomo/blogapp'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, ENV['BRANCH'] || 'master'
 
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/blogapp_aws_5'
+set :deploy_to, '/var/www/blogapp'
 
 # シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}
